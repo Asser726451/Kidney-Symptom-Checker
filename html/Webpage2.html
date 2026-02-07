@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Renal Radar: Kidney Symptom Checker</title>
+    <link rel="stylesheet" href= "../css/Webpage2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href= "../css/NavigationBar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body style="background-color: rgb(240, 240, 240);">
+    <header>
+    <nav class="navigationBar">
+      <ul class="navigationLinks">
+        <li><img src="../images/whiteLogo.png" alt="Logo" class="logo"></li>
+        <li><a href="../html/Webpage1.html">Home</a></li>
+        <li><a href="../html/Webpage2.html">Symptom Checker</a></li>
+        <li><a href="chatbot">AI Chatbot</a></li>
+        <li><a href="contuctUs">Contact Us</a></li>
+      </ul>
+    </nav>
+    </header>
+  <div class="webpage2">
+    <div>
+      <p class="age">Age</p>
+      <input class="numberInput" type="number" id="age" min="1" max="120" placeholder="Enter your age" required>
+    </div>
+    <div>
+      <p class="gender">Gender</p>
+      <select class="selectGender" id="gender" required>
+        <option value=""disabled selected hidden>Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+    <div>
+      <button class="continue" onclick="validateForm()">Continue</button>
+    </div>
+    <div id="message" class="message"></div>
+  </div>
+  <script src="../js/Webpage2.js"></script>
+  <script src="../js/navigationBar.js"></script>
+  </body>
+</html>

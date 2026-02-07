@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Renal Radar: Kidney Symptom Checker</title>
+    <link rel="stylesheet" href= "../css/NavigationBar.css">
+    <link rel="stylesheet" href= "../css/home.css">
+    <link rel="stylesheet" href="../css/Webpage1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" 
+    rel="stylesheet">
+  </head>
+  <body style="background-color: rgb(240, 240, 240);">
+    <header>
+    <nav class="navigationBar">
+      <ul class="navigationLinks">
+        <li><img src="../images/whiteLogo.png" alt="Logo" class="logo"></li>
+        <li><a href="../html/Webpage1.html">Home</a></li>
+        <li><a href="../html/Webpage2.html">Symptom Checker</a></li>
+        <li><a href="chatbot">AI Chatbot</a></li>
+        <li><a href="contuctUs">Contact Us</a></li>
+      </ul>
+    </nav>
+    </header>
+      <div class="aboutDiv1">
+        <img src="../images/surgery.jpeg" alt="Kidney surgery" class="surgery">
+        <div class="aboutDiv2">
+          <p class="homeTitle">Next-Gen Kidney Disease Detection</p>
+          <p class="homeDetails">Symptoms are not only signs of a certain disease, they are important signals, detectable through high-quality radars. Our website offers a new advanced medical service that provides diagnosis for kidney and urological diseases based on given symptoms.</p>
+          <button class="startNow" onclick="location.href='Webpage2.html'">Start Now</button>
+          <button class="learnMore" onclick="document.getElementById('home').scrollIntoView({behavior: 'smooth'});">Learn More</button>
+        </div>
+      </div>
+      <section id="home" class="about">
+      <div class="home">
+        <p class="aboutHeading">Renal Radar</p>
+        <p class="aboutContent">Renal Radar is an online medical tool that analyzes symptoms experienced by the user and provides a likelihood of possible kidney and urological diseases.</p>
+        <p class="aboutContent">Although Renal Radar is approved by urologists, the final results still resemble an overview of the condition. Therefore, the main purpose of these results is motivating users to consult medical experts, reflecting our mission: Early Awareness Saves Lives.</p>
+        <p class="aboutContent">It is still important to utilize such technology to educate yourself about your current health and the need to visit a professional especially when:</p>
+        <div class="statRow">
+        <div class="statItem">
+        <img src="../images/delayIcon.png" alt="Delay Icon" class="delayIcon">
+        <p class="aboutStat">35.4% of chronic kidney disease patients, delayed seeking medical care for 3 months or more.</p>
+        </div>  
+        <div class="statItem">
+        <img src="../images/healthIcon.png" alt="Health Icon" class="healthIcon">
+        <p class="aboutStat">Early referal in chronic kidney disease patients decreases the risk of death by 33%.</p>
+        </div>
+        <div class="statItem">
+        <img src="../images/patientInBedIcon.png" alt="Patient at Hospital" class="patientInBedIcon">
+        <p class="aboutStat" style="position: absolute; bottom: 10px;">Late referal chronic kidney disease patients spend 8.8 more days in the hospital.</p>
+        </div>
+        </div>
+        <p class="aboutContent">Renal Radar assists you in searching for the best version of your kidneys by ensuring kidney health, checking for possible diseases, and decreasing the <strong>unneeded</strong> visits to the doctor.</p>
+        <p class="aboutHeading" style="margin-top: 40px">How does Renal Radar Work?</p>
+        <p class="aboutContent" style="max-width: 750px;">1. To maximize accuracy, each disease is given a rating from 0-1, depending on how closely symptoms match.</p>
+        <p class="aboutContent">2. Age, gender, and the prevalence of each disease are all taken into consideration.</p>
+        <p class="aboutContent">3. At the end, the 3 diseases with the highest numerical values will be listed.</p>
+        <p class="aboutContent" style="max-width: 750px;">4. The numerical values will not be provided to avoid confussion, instead a term describing the probability of the disease will be provided.</p>
+        <p class="aboutContent">5. A brief of the disease, next steps, in addition to all symptoms will be provided.</p>
+        <p class="aboutContent">6. Our AI chatbot is always there to help.</p>
+        <p class="aboutContent">7. This tool is intended for awareness and it does not replace professional medical advice.</p>
+      <div class="kidneyDiagram">
+        <img src="../images/kidneyDiagram.png" alt="Kidney diagram" class="rotated-image">
+      </div>
+      </div>
+    </section>
+    <script src="../js/navigationBar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Renal Radar: Kidney Symptom Checker</title>
+    <link rel="stylesheet" href= "../css/Webpage3.css">
+    <link rel="stylesheet" href= "../css/NavigationBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body style="background-color: rgb(240, 240, 240);">
+    <header>
+    <nav class="navigationBar">
+      <ul class="navigationLinks">
+        <li><img src="../images/whiteLogo.png" alt="Logo" class="logo"></li>
+        <li><a href="../html/Webpage1.html">Home</a></li>
+        <li><a href="../html/Webpage2.html">Symptom Checker</a></li>
+        <li><a href="chatbot">AI Chatbot</a></li>
+        <li><a href="contuctUs">Contact Us</a></li>
+      </ul>
+    </nav>
+    </header>
+    <div class="webpage3">
+      <div>
+        <p class="title">Kidney Symptom Checker</p>
+      </div>
+      <div>
+        <p class="select">Please select symptoms that apply</p>
+      </div>
+      <div>
+        <p class="limit">Select 2-10 symptoms</p>
+      </div>
+      <form id="symptomForm">
+      <div class="checkboxes">
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="fatigue">
+            Fatigue
+          </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="edema">
+            Edema (excess fluid swellling in the legs, feet, ankles, hands, or face)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="oliguria">
+            Oliguria (low urine output)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="polyuria">
+            Polyuria (high urine output)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="hematuria">
+            Hematuria (blood in urine)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="foamyUrine">
+            Foamy urine
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="proteinuria">
+            Proteinuria (protein in urine)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="flankPain">
+            Flank Pain (pain in the side of the body, between the ribs and hip)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="fever">
+            Fever
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="dysuria">
+            Dysuria (painful urination)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="frequentUrination">
+            Frequent urination
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="nausea">
+            Nausea
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="vomiting">
+            Vomiting
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="appetiteLoss">
+            Appetite loss 
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="wieghtLoss">
+            Weight loss
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="hypertension">
+            Hypertension
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="hypotension">
+            Hypotension
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="anemia">
+            Anemia (low concentration of red blood cells)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="pruritus">
+            Pruritus (itchy skin)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="drySkin">
+            Dry skin
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="dyspnea">
+            Dyspnea (shortness of breath)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="confusion">
+            Confusion
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="muscleCramps">
+            Muscle cramps
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="headache">
+            Headache
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="nocturia">
+            Nocturia (frequent urination at night)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="cloudyUrine">
+            Cloudy urine
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="uremicBreath">
+            Uremic breath (urine-like odor on the breath)
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="chestPain">
+            Chest pain 
+        </label>
+        <label style="display: block;">
+          <input type="checkbox" name="symptoms" value="weakness">
+            Weakness
+        </label>
+        <label style="display: block;
+        margin-bottom: 25px;">
+          <input type="checkbox" name="symptoms" value="pallor">
+            Pallor (pale skin)
+        </label>
+      </div>
+      <div>
+        <button type="submit" class="submitButton">Submit</button>
+      </div>
+      <div>
+        <p id="error" style="color: red;
+        font-size: 15px;
+        font-weight: bold;
+        position: absolute;
+        top: 505px; 
+        right: 20px;">
+          Please select 2-10 symptoms
+        </p>
+      </div>
+      </form>
+    </div>
+    <script src="../js/Webpage3.js"></script>
+    <script src="../js/navigationBar.js"></script>
+  </body>
+</html>
