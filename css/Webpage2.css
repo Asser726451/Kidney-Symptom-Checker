@@ -67,4 +67,42 @@ body {
   color: red;
   font-size: 15px;
   font-weight: bold;
+
+}
+
+@media (max-width: 600px) {
+  .webpage2 {
+    width: 90%;           /* shrink width to fit screen */
+    height: auto;         /* adjust height automatically */
+    padding-bottom: 60px; /* make room for the button/message */
+  }
+
+  .age,
+  .gender {
+    font-size: 28px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .numberInput,
+  .selectGender {
+    font-size: 14px;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+  }
+
+  .continue {
+    bottom: 15px;
+    right: 15px;
+    width: 70px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .message {
+    bottom: 5px;
+    right: 15px;
+    font-size: 13px;
+  }
 }
