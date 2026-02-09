@@ -1703,9 +1703,9 @@ const sortedDiseases = Object.entries(diseaseScores)
 const topDiseases = sortedDiseases.slice(0, 3);
 
 function getChanceLevel(score) {
-  if (score >= 9) {
+  if (score >= 8) {
     return "High chance";
-  } else if (score >= 5) {
+  } else if (score >= 4) {
     return "Moderate chance";
   } else if (score >= 1) {
     return "Low chance";
@@ -1769,4 +1769,5 @@ topDiseases.forEach(([diseaseName, score]) => {
 
   diseaseList.appendChild(card);
 });
+
 
