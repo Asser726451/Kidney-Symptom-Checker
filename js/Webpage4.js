@@ -114,11 +114,11 @@
       Symptoms: Symptoms include extreme fatigue, nausea, metal taste in the mouth, and difficulty breathing due to fluid in the lungs.<br><br>
       Impact: Survival at this stage requires regular dialysis or a kidney transplant to perform the vital functions the kidneys can no longer manage.`
     },
-    obstructiveNephropathy: {
-      brief: `<br><br>Definition: Obstructive Nephropathy is a structural or functional hindrance of normal urine flow, leading to kidney dysfunction.<br><br>
-      Causes: Causes include kidney stones, prostate enlargement (BPH), tumors, or congenital narrowing of the urinary tract.<br><br>
-      Symptoms: Patients may experience changes in urine stream, flank pain, and recurrent urinary tract infections.<br><br>
-      Impact: Chronic obstruction leads to high pressure within the kidneys, causing irreversible scarring and loss of nephrons.`
+    obstructiveUropathy: {
+    brief: `<br><br>Definition: Obstructive Uropathy is a condition where the normal flow of urine is blocked, causing urine to back up and potentially damaging the urinary tract and kidneys.<br><br>
+    Causes: Causes include kidney stones, tumors, enlarged prostate, strictures, or congenital abnormalities of the urinary tract.<br><br>
+    Symptoms: Patients may experience difficulty urinating, changes in urine stream, flank or abdominal pain, urinary tract infections, and swelling.<br><br>
+    Impact: Prolonged obstruction can lead to kidney damage, hydronephrosis, loss of kidney function, and increased risk of infections.`
     },
     contrastInducedNephropathy: {
       brief: `<br><br>Definition: Contrast-Induced Nephropathy (CIN) is a form of acute kidney injury that occurs after the administration of intravenous radiocontrast media.<br><br>
@@ -1769,3 +1769,4 @@ topDiseases.forEach(([diseaseName, score]) => {
 
   diseaseList.appendChild(card);
 });
+
