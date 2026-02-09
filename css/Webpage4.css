@@ -7,6 +7,7 @@
 .results {
   font-weight: bold;
   font-size: 30px;
+  margin-left: 20px;
 }
 
 .resultsContainer {
@@ -55,4 +56,99 @@
   font-size: 15px;
   font-style: italic;
   color: #6b7280;
+}
+
+#diseaseList {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  gap: 15px;                    
+}
+
+.resultCard {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto 20px auto; 
+  max-width: 1000px;          
+  width: 90%;                
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.resultCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.resultCard h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.resultCard p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.3;
+}
+
+.resultCard {
+  width: 1000px; 
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  padding: 15px;
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.high { color: red; font-weight: bold; }
+.moderate { color: orange; font-weight: bold; }
+.low { color: green; font-weight: bold; }
+.none { color: gray; font-weight: normal; }
+
+.webpage4 {
+  position: relative;
+}
+
+button {
+  height: 40px;                  
+  width: 220px;                  
+  background-color: #007BFF;     
+  color: white;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;                  
+  border-radius: 8px;            
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.2s ease-in-out;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 1100px;
+}
+
+button:hover {
+  background-color: #0056b3;     
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  background-color: #004080;
+  transform: translateY(0);     
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+  margin-top: -50px;
+  margin-left: 20px;
 }
