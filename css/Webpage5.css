@@ -169,9 +169,54 @@
       }
     }
 
-    @media (max-width: 500px) {
-      .contact-image {
-        width: 200px;
-        height: 200px;
-      }
-    }
+  @media (max-width: 600px) {
+  /* Navbar adjustments */
+  .navigationBar li a {
+    font-size: 16px;    /* smaller links */
+  }
+
+  .logo {
+    height: 70px;       /* smaller logo */
+  }
+
+  /* Page content stack */
+  .page-content {
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 15px 30px 15px;
+    gap: 25px;
+  }
+
+  /* Contact form adjustments */
+  .contact-form {
+    width: 95%;          /* shrink to fit phone screen */
+    padding: 30px 20px;
+  }
+
+  .contact-form h2 {
+    font-size: 28px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  .contact-note {
+    font-size: 11px;
+  }
+
+  /* Contact image adjustments */
+  .contact-image {
+    width: 200px;
+    height: 200px;
+    border-width: 4px;
+  }
+}
