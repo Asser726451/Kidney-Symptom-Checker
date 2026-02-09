@@ -47,4 +47,24 @@ nav {
 
 nav.show {
   transform: translateY(0);
+
+}
+
+/* Adjust for small screens (phones) */
+@media (max-width: 600px) {
+  .navigationBar ul {
+    padding: 15px 5px;       /* Reduce padding */
+  }
+
+  .navigationBar li a {
+    font-size: 14px;          /* Smaller text */
+  }
+
+  .logo {
+    height: 60px;             /* Smaller logo */
+  }
+
+  nav {
+    height: auto;             /* Adjust height if needed */
+  }
 }
