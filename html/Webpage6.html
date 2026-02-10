@@ -14,45 +14,50 @@
     <link rel="stylesheet" href="../css/navigationBar.css">
     <link rel="stylesheet" href="../css/Webpage6.css">
 </head>
+
 <body>
-    <!-- Navbar -->
+
+    <!-- Navbar (UNCHANGED) -->
     <header>
         <nav class="navigationBar">
             <ul class="navigationLinks">
                 <li><img src="../images/whiteLogo.png" alt="Logo" class="logo"></li>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../html/Webpage2.html">Symptom Checker</a></li>
-                <li><a href="../html/Webpage.html">AI Chatbot</a></li>
+                <!-- FIXED FILE NAME ONLY -->
+                <li><a href="../html/Webpage6.html">AI Chatbot</a></li>
                 <li><a href="../html/Webpage5.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Chatbot centered container -->
-    <div class="chat-container-wrapper">
+    <!-- Chatbot -->
+    <main class="chat-container-wrapper">
         <div class="container">
-            <div class="header">
+
+            <div class="chat-header">
                 <h1>🩺 Kidney Disease Assistant</h1>
                 <p>Ask me anything about kidney health and disease</p>
             </div>
 
             <div id="chatbox">
                 <div class="welcome-message">
-                    👋 Hello! I'm your Kidney Disease Assistant. I can help answer questions about kidney health, symptoms, treatments, and prevention. How can I help you today?
+                    👋 Hello! I'm your Kidney Disease Assistant. I can help answer questions about kidney health, symptoms, treatments, and prevention.
                 </div>
             </div>
 
             <div class="input-area">
-                <input 
-                    type="text" 
-                    id="userInput" 
-                    placeholder="Type your question here..." 
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Type your question here..."
                     onkeypress="handleKeyPress(event)"
                 >
                 <button id="sendBtn" onclick="sendMessage()">Send</button>
             </div>
+
         </div>
-    </div>
+    </main>
 
     <script>
     const chatbox = document.getElementById('chatbox');
@@ -170,4 +175,5 @@
 </body>
 
 </html>
+
 
